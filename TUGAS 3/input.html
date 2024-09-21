@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Masukan nama dan NIM</h1>
+        <p>Silahkan isi nama dan NIM anda pada tombol di bawah ini.</p>
+        <button onclick="getInput()">Masukkan Data</button>
+
+        <div class="output" id="output">
+            <!-- Nama dan NIM akan muncul di sini -->
+        </div>
+    </div>
+
+    <script>
+        function getInput() {
+            // Menggunakan prompt untuk meminta input nama dan NIM
+            var nama = prompt("ISI NAMA ANDA:");
+            var nim = prompt("ISI NIM ANDA:");
+
+            // Memeriksa apakah user memberikan input
+            if (nama && nim) {
+                // Menampilkan hasil di bagian output
+                document.getElementById('output').innerHTML = `
+                    <h2>Data Anda</h2>
+                    <p><strong>Nama:</strong> ${nama}</p>
+                    <p><strong>NIM:</strong> ${nim}</p>
+                `;
+            } else {
+                // Jika input kosong
+                alert("Input tidak lengkap. Silakan masukkan Nama dan NIM.");
+            }
+        }
+    </script>
+</body>
+</html>

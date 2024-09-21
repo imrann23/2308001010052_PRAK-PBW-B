@@ -1,0 +1,47 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #073caf3f;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            background-color: #e6e6e6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(241, 228, 228);
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .playwrite-cu-uniquifier {
+            font-family: "Playwrite CU", cursive;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+          }
